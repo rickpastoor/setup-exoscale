@@ -204,7 +204,7 @@ const authenticate = async (options: SetupOptions) => {
 
 	info(`Authenticating the Exoscale CLI as ${account}.`);
 
-	const configFile = `defaultaccount = "${account}"\n[[accounts]]\n  account = "${account}"\n  defaultZone = "${zone}"\n  environment = ""\n  key = "${key}"\n  name = "${account}"\n  secret = "${secret}"\n`;
+	const configFile = `defaultaccount = "${account}"\n[[accounts]]\n  account = "${account}"\n  defaultZone = "${zone}"\n  endpoint = ""\n  environment = ""\n  key = "${key}"\n  name = "${account}"\n  secret = "${secret}"\n`;
 
 	const configPath = join(
 		process.env.RUNNER_TEMP || "/tmp",
